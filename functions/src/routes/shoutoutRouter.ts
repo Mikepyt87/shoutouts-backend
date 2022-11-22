@@ -20,7 +20,7 @@ shoutoutRouter.get("/", async (req, res) => {
     errorResponse(err, res);
   }
 });
-
+// get all shoutouts
 shoutoutRouter.get("/:name", async (req, res) => {
   const name: string = req.params.name;
   try {
